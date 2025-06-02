@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservasi Hotel</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <h1>Hotel Boking</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="rooms">
+        <h2>Our Rooms</h2>
+        <div class="room">
+            <img src="Gambar/room1.jpg" alt="Gambar_Room"/>
+            <h3>Standart Room</h3>
+            <p>Our standart room offers a comfortable stay with basic amenties</p>
+        </div>
+        <div class="room">
+            <img src="Gambar/room2.jpg" alt="Room 2"/>
+            <h3>Deluxe Room</h3>
+            <p>
+                Upgrade your stay with our deluxe room, featureing additional space and luxury amenties.
+            </p>
+        </div>
+    </section>
+
+    <section id="order">
+        <h2>Book your Stay</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="checkin">Chec-in Date</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="message">Special Requests:</label>
+            <textarea name="message" id="message"></textarea>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hotel Booking. All rights reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Keranjang Ikon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    .cart-icon {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 28px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .cart-icon .count-badge {
+      position: absolute;
+      top: -8px;
+      right: -10px;
+      background-color: red;
+      color: white;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .product {
+      margin: 20px 0;
+    }
+
+    button {
+      padding: 8px 12px;
+      background-color: #2ecc71;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ikon Keranjang -->
+  <div class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="count-badge" id="cart-count">0</span>
+  </div>
+
+  <!-- Produk -->
+  <div class="product">
+    <span>Es Teh Manis</span>
+    <button onclick="addToCart()">Tambah ke Keranjang</button>
+  </div>
+
+  <div class="product">
+    <span>Jus Mangga</span>
+    <button onclick="addToCart()">Tambah ke Keranjang</button>
+  </div>
+
+  <script>
+    let cartCount = 0;
+
+    function addToCart() {
+      cartCount++;
+      document.getElementById('cart-count').textContent = cartCount;
+    }
+  </script>
+
+</body>
+</html>
